@@ -1,165 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michał Baran - Portfolio</title>
-    <link href="./index.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-bg text-white">
-    <main>
-      <header class="py-6 px-16 mx-auto max-w-amb">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michał Baran - Portfolio</title>
+  <link href="./index.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="bg-bg text-white font-dmSans text-justify">
+  <main class="px-4">
+    <header class="py-6 mx-auto max-w-amb">
+      <div class="flex gap-4">
         <img class="w-10 h-10" src="images/logo.svg" alt="" />
-        <p>Michał Baran</p>
-        <p>Backend Developer</p>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a download href="#">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <section class="py-32 px-16 mx-auto max-w-amb" id="about">
-        <h1>My name is Michał and I'm an aspiring Backend developer and ultra cyclist adventure seeker.</h1>
-        <p>
-          You might be interested in checking the list of my skills. Don't forget to have a glimpse at my projects. I'm
-          looking for a new challenges so if you have one - contact me 😊
-        </p>
-        <a href="#contact">Get in touch</a>
-        <a href="#skills">Get to know me</a>
-        <img class="w-1/2 h-1/2" src="images/avatar.png" alt="Michał Baran.">
-      </section>
-      <section id="skills">
-        <h2>MY SKILLS</h2>
-        <p>
-          I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do
-          below!
-        </p>
-        <article>
-          <img class="w-44 h-44" src="images/triangle.svg" alt="" />
-          <h3>Working knowledge</h3>
-          <ul>
-            <li>- Semantic HTML5</li>
-            <li>— Flexbox</li>
-            <li>— Markdown</li>
-            <li>— JS: Local storage</li>
-            <li>— Figma</li>
-            <li>— CSS grid</li>
-            <li>— Forms</li>
-            <li>- JS: DOM manipulations</li>
-            <li>— SASS</li>
-          </ul>
-        </article>
-        <article>
-          <img class="w-44 h-44" src="images/circle.svg" alt="" />
-          <h3>Know something about</h3>
-          <ul>
-            <li>— JavaScript ES6 + features</li>
-            <li>— CSS animations</li>
-            <li>— Working with API</li>
-            <li>— NPM Scripts</li>
-            <li>— PWA</li>
-            <li>— Git</li>
-            <li>— Accessibility</li>
-          </ul>
-        </article>
-        <article>
-          <img class="w-44 h-44" src="images/hexagon.svg" alt="" />
-          <h3>Want to learn</h3>
-          <ul>
-            <li>— React</li>
-            <li>— Node</li>
-            <li>— Electron</li>
-            <li>— SSR</li>
-            <li>— TypeScript</li>
-            <li>— Gatsby</li>
-            <li>— WebSockets</li>
-          </ul>
-        </article>
-      </section>
-      <section class="py-32 px-16 mx-auto max-w-amb" id="projects">
-        <h3>RECENT PROJECTS</h3>
-        <p>
-          Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of
-          my accomplishments so far.
-        </p>
-        <article>
-          <h3>simple-editor</h3>
-          <p><img class="w-3 h-3" src="images/star.svg" alt="" />27</p>
-          <p>
-            Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
-            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
-            <li></li>
-          </ul>
-          <a href="#">View demo</a>
-          <a href="#">Source code</a>
-        </article>
-      </section>
-      <section class="py-32 px-16 mx-auto max-w-amb" id="afterHours">
-        <h2>AFTER HOURS</h2>
-        <p>
-          Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into
-          how I spend my after-hours.
-        </p>
-        <article>
-          <h3>OCR Running</h3>
-          <img src="images/triangle.svg" alt=""/>
-          <p>
-            Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
-            electronic music
-          </p>
-        </article>
-        <article>
-            <h3>Bicyle Ultra Races</h3>
-            <img src="images/triangle.svg" alt=""/>
-            <p>
-              Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
-              electronic music
-            </p>
-          </article>
-          <article>
-            <h3>Bikepacking</h3>
-            <img src="images/triangle.svg" alt=""/>
-            <p>
-              Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
-              electronic music
-            </p>
-          </article>
-          <article>
-            <h3>Squadrats</h3>
-            <img src="images/triangle.svg" alt=""/>
-            <p>
-              Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
-              electronic music
-            </p>
-          </article>
-      </section>
-      <section class="py-32 px-16 mx-auto max-w-amb" id="contact">
-        <h2>Let's work together</h2>
-        <p>I'm open for new opportunities.<br>If you have one for me we should talk!</p>
-        <a href="mailto:michal.baran.dev@gmail.com">contact@michalbaran.pl</a>
-        <p>or find me on</p>
+        <div>
+          <p class="text-xl font-bold text-accent">Michał Baran</p>
+          <p class="text-xs font-bold text-gray-500 uppercase tracking-wider">Backend Developer</p>
+        </div>
+      </div>
+      <nav class="hidden">
         <ul>
-            <li><a href=""><img class="w-6 h-6" src="images/github.svg" alt=""></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a download href="#">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </section>
-    </main>
+      </nav>
+    </header>
 
-    <script src="main.js" typ="module"></script>
-  </body>
+    <section class="mx-auto max-w-amb my-5" id="about">
+      <img class="w-full mb-5" src="images/avatar.png" alt="Michał Baran">
+      <h1 class="text-2xl font-bold px-2 mb-4">My name is Michał and I'm an aspiring <span class="text-accent">Backend developer</span> and ultra cyclist adventure
+        seeker.</h1>
+      <p class="text-gray-400 text-base px-2 mb-8 font-medium">
+        You might be interested in checking the list of my <a href="#skills" class="text-white">skills</a>. Don't forget to have a glimpse at my <a href="#projects" class="text-white">projects</a>. I'm
+        looking for a new challenges so if you have one - <a href="#contact" class="text-white">contact me</a> 😊
+      </p>
+      <a class="w-48 h-14 text-bg font-bold bg-accent rounded-[0.625rem] flex gap-3 text-xl items-center mb-4" href="#contact"><img class="ml-4 w-6 h-6" src="images/text.svg" alt="">Get in touch</a>
+      <a class="w-56 h-14 text-accent bg-transparent font-bold border-solid border-2 border-[#1F2937] rounded-[0.625rem] flex gap-3 text-xl items-center mb-4" href="#skills"><img class="ml-4 w-6 h-6" src="images/image.svg" alt="">Get to know me</a>
+    </section>
+
+    <section class="mx-auto max-w-amb my-[3.75rem]" id="skills">
+      <h2 class="text-gray-400 text-xl mb-4 font-bold">MY SKILLS</h2>
+      <p class="text-2xl mb-10 font-medium">
+        I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do
+        below!
+      </p>
+      <div class="flex flex-col gap-4">
+      <article class="p-5 bg-slate-900 rounded-[0.625rem] ">
+        <img class="w-44 h-44 mb-10" src="images/triangle.svg" alt="" />
+        <h3 class="my-3 py-3 font-bold text-2xl border-t-accent border-t-2">Working knowledge</h3>
+        <ul>
+          <li>- Semantic HTML5</li>
+          <li>— Flexbox</li>
+          <li>— Markdown</li>
+          <li>— JS: Local storage</li>
+          <li>— Figma</li>
+          <li>— CSS grid</li>
+          <li>— Forms</li>
+          <li>- JS: DOM manipulations</li>
+          <li>— SASS</li>
+        </ul>
+      </article>
+      <article class="p-5 bg-slate-900 rounded-[0.625rem]">
+        <img class="w-44 h-44 mb-10" src="images/circle.svg" alt="" />
+        <h3 class="my-3 py-3 font-bold text-2xl border-t-accent border-t-2">Know something about</h3>
+        <ul>
+          <li>— JavaScript ES6 + features</li>
+          <li>— CSS animations</li>
+          <li>— Working with API</li>
+          <li>— NPM Scripts</li>
+          <li>— PWA</li>
+          <li>— Git</li>
+          <li>— Accessibility</li>
+        </ul>
+      </article>
+      <article class="p-5 bg-slate-900 rounded-[0.625rem] shadow-inner">
+        <img class="w-44 h-44 mb-10" src="images/hexagon.svg" alt="" />
+        <h3 class="my-3 py-3 font-bold text-2xl border-t-accent border-t-2">Want to learn</h3>
+        <ul>
+          <li>— React</li>
+          <li>— Node</li>
+          <li>— Electron</li>
+          <li>— SSR</li>
+          <li>— TypeScript</li>
+          <li>— Gatsby</li>
+          <li>— WebSockets</li>
+        </ul>
+      </article>
+    </div>
+    </section>
+
+    <section class="mx-auto max-w-amb my-[3.75rem]" id="projects">
+      <h3>RECENT PROJECTS</h3>
+      <p>
+        Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of
+        my accomplishments so far.
+      </p>
+      <article>
+        <h3>simple-editor</h3>
+        <p><img class="w-3 h-3" src="images/star.svg" alt="" />27</p>
+        <p>
+          Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+          nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...
+        </p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li></li>
+        </ul>
+        <a href="#">View demo</a>
+        <a href="#">Source code</a>
+      </article>
+    </section>
+
+    <section class="py-32 mx-auto max-w-amb" id="afterHours">
+      <h2>AFTER HOURS</h2>
+      <p>
+        Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into
+        how I spend my after-hours.
+      </p>
+      <article>
+        <h3>OCR Running</h3>
+        <img src="images/triangle.svg" alt="" />
+        <p>
+          Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
+          electronic music
+        </p>
+      </article>
+      <article>
+        <h3>Bicyle Ultra Races</h3>
+        <img src="images/triangle.svg" alt="" />
+        <p>
+          Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
+          electronic music
+        </p>
+      </article>
+      <article>
+        <h3>Bikepacking</h3>
+        <img src="images/triangle.svg" alt="" />
+        <p>
+          Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
+          electronic music
+        </p>
+      </article>
+      <article>
+        <h3>Squadrats</h3>
+        <img src="images/triangle.svg" alt="" />
+        <p>
+          Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
+          electronic music
+        </p>
+      </article>
+    </section>
+
+    <section class="py-32 mx-auto max-w-amb" id="contact">
+      <h2>Let's work together</h2>
+      <p>I'm open for new opportunities.<br>If you have one for me we should talk!</p>
+      <a href="mailto:michal.baran.dev@gmail.com">contact@michalbaran.pl</a>
+      <p>or find me on</p>
+      <ul>
+        <li><a href=""><img class="w-6 h-6" src="images/github.svg" alt=""></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="main.js" typ="module"></script>
+</body>
+
 </html>

@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         bg: '#020916',
-        accent: 'C55258',
+        accent: '#C55258',
       },
       fontFamily: {
         'dmSans': ['DM Sans', 'sans-serif']
