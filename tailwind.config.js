@@ -11,6 +11,9 @@ module.exports = {
       },
       fontFamily: {
         'dmSans': ['DM Sans', 'sans-serif']
+      },
+      maxWidth: {
+        'amb': '82rem',
       }
     },
   },
