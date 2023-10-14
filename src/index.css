@@ -14,8 +14,4 @@
     .h3 {
         @apply text-2xl py-3 font-bold border-t-accent border-t-2;
     }
-
-    .skills-image {
-        @apply mb-10;
-    }
 }

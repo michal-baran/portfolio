@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hi! My name is Michał and I'm aspiring Fullstack developer. Feel free to get in touch!"/>
+  <meta name="description"
+    content="Hi! My name is Michał and I'm aspiring Fullstack developer. Feel free to get in touch!" />
   <title>Michał Baran - Portfolio</title>
   <link href="./index.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,21 +16,22 @@
 
 <body class="bg-bg text-white font-dmSans text-justify">
   <main class="px-4">
-    <header class="py-6 mx-auto max-w-amb">
-      <div class="flex gap-4">
-        <img class="" src="images/logo.svg" alt="" />
-        <div>
+    <header class="flex items-center gap-4 justify-between py-6 mx-auto max-w-amb  ">
+      <div class="flex items-center">
+        <img class="mr-4" src="images/logo.svg" alt="" />
+        <div class="flex-shrink-0">
           <p class="text-xl font-bold text-accent">Michał Baran</p>
-          <p class="text-xs font-bold text-gray-500 uppercase tracking-wider">Fullstack Developer</p>
+          <p class="text-xs font-bold text-gray-200 uppercase tracking-wider">Fullstack Developer</p>
         </div>
       </div>
-      <nav class="hidden">
-        <ul>
+      <nav class="md:block hidden">
+        <ul class="flex gap-10 items-center font-bold text-base">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a download href="#">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="flex gap-2 items-center" download><img class="w-5 h-5"
+                src="images/download.svg">Resume</a></li>
+          <li><a href="#contact" class="py-[14px] px-8 text-bg bg-accent rounded-xl flex gap-3">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -42,10 +44,10 @@
             developer</span> and ultra cyclist adventure
           seeker.</h1>
         <p class="text-gray-400 md:text-2xl text-base px-2 md:mb-16 mb-8 font-medium">
-          Peruse through my <a href="#skills" class="text-white underline">skills</a> and check out my <a href="#projects"
-            class="text-white underline">projects</a> — you might find it interesting! I'm actively seeking new
-          challenges, so if you have any exciting ventures, feel free to <a href="#contact" class="text-white underline">contact
-            me</a>.
+          Peruse through my <a href="#skills" class="text-white underline">skills</a> and check out my <a
+            href="#projects" class="text-white underline">projects</a> — you might find it interesting! I'm actively
+          seeking new challenges, so if you have any exciting ventures, feel free to <a href="#contact"
+            class="text-white underline">contact me</a>.
         </p>
         <div class="flex flex-col md:flex-row gap-4">
           <a class="py-[14px] px-8 text-bg font-bold bg-accent rounded-[0.625rem] flex gap-3 text-xl items-center"
@@ -65,7 +67,7 @@
       </p>
       <div class="flex flex-col md:flex-row gap-4 mt-10 ">
         <article class="article">
-          <img class="skills-image" src="images/skills1.svg" alt="Full completed cubic" />
+          <img class="mb-10 h-44" src="images/skills1.svg" alt="Full completed cubic" />
           <h3 class="h3">Working knowledge</h3>
           <ul class="text-sm font-medium tracking-tight space-y-2">
             <li>— Java 11</li>
@@ -83,7 +85,7 @@
           </ul>
         </article>
         <article class="article">
-          <img class="skills-image" src="images/skills2.svg" alt="Partially completed cubic" />
+          <img class="mb-10 h-44" src="images/skills2.svg" alt="Partially completed cubic" />
           <h3 class="h3">Know something about</h3>
           <ul class="text-sm font-medium tracking-tight space-y-2">
             <li>— Design patterns</li>
@@ -100,7 +102,7 @@
           </ul>
         </article>
         <article class="article">
-          <img class="skills-image" src="images/skills3.svg" alt="Incompleted cubic" />
+          <img class="mb-10 h-44" src="images/skills3.svg" alt="Incompleted cubic" />
           <h3 class="h3">Want to learn</h3>
           <ul class="text-sm font-medium tracking-tight space-y-2">
             <li>— NoSQL</li>
@@ -123,37 +125,42 @@
         look at what I've achieved.
       </p>
 
-      <article class="bg-slate-900 rounded-[1.25rem] max-w-2xl">
-        <div
-          class="bg-gradient-to-br from-white/10 to-white/5 h-11 border-b border-b-slate-950 rounded-t-[1.25rem] shadow-innerlight">
-        </div>
-        <div class="p-5">
-          <div class="flex gap-4">
-            <h3 class="font-bold text-2xl">simple-editor</h3>
-            <p
-              class="bg-gray-400 bg-opacity-10 rounded flex gap-0.5 my-1 px-2 font-medium text-base text-[#9CA3AF] items-center">
-              <img class="w-4 h-4" src="images/star.svg" alt="Star icon" />27
+      <div class="grid">
+        <article class="bg-gradient-to-br from-white/10 to-white/5 rounded-[1.25rem] overflow-clip max-w-2xl">
+          <div
+            class="p-4 h-11 flex gap-1.5 bg-gradient-to-br from-white/10 to-white/5 border-b border-b-slate-950 shadow-innerlight">
+            <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
+            <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
+            <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
+          </div>
+          <div class="p-5">
+            <div class="flex gap-4">
+              <h3 class="font-bold text-2xl">simple-editor</h3>
+              <p
+                class="bg-gray-400 bg-opacity-10 rounded flex gap-0.5 py-1 px-2 font-medium text-base text-[#9CA3AF] items-center">
+                <img class="w-4 h-4" src="images/star.svg" alt="Star icon" />27
+              </p>
+            </div>
+            <p class="text-xl text-gray-400 my-4">
+              Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+              nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...
             </p>
+            <ul class="flex gap-2 mb-10">
+              <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">HTML</li>
+              <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">CSS</li>
+              <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">JAVASCRIPT</li>
+            </ul>
+            <div class="flex flex-col md:flex-row gap-4">
+              <a href="#"
+                class="w-max border border-slate-800 font-bold text-accent text-xl py-4 px-5 flex gap-2  items-center rounded-xl bg-slate-950"><img
+                  class="" src="images/demo.svg" alt="Simple window icon">View demo</a>
+              <a href="#"
+                class="w-max border border-slate-800 font-bold text-accent text-xl py-4 px-5 flex gap-2  items-center rounded-xl bg-slate-950"><img
+                  class="" src="images/github_accent.svg" alt="Github logo in color">Source code</a>
+            </div>
           </div>
-          <p class="text-xl text-gray-400 my-4">
-            Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
-            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...
-          </p>
-          <ul class="flex gap-2 mb-10">
-            <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">HTML</li>
-            <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">CSS</li>
-            <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">JAVASCRIPT</li>
-          </ul>
-          <div class="flex flex-col md:flex-row gap-4">
-            <a href="#"
-              class="w-max border border-slate-800 font-bold text-accent text-xl py-4 px-5 flex gap-2  items-center rounded-xl bg-slate-950"><img
-                class="" src="images/demo.svg" alt="Simple window icon">View demo</a>
-            <a href="#"
-              class="w-max border border-slate-800 font-bold text-accent text-xl py-4 px-5 flex gap-2  items-center rounded-xl bg-slate-950"><img
-                class="" src="images/github_accent.svg" alt="Github logo in color">Source code</a>
-          </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </section>
 
     <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb " id="afterHours">
@@ -207,7 +214,7 @@
         href="mailto:michal.baran.dev@gmail.com"><img class="w-6 h-6" src="images/mail.svg"
           alt="">contact@michalbaran.pl</a>
       <p class="text-2xl font-medium text-gray-400 mb-6 text-center">or find me on</p>
-      <ul class="flex gap-4">
+      <ul class="flex flwx-wrap gap-4">
         <li>
           <a href="https://github.com/michal-baran" target="_blank"><img class="article w-14 h-14 rounded-[28px] p-4"
               src="images/github.svg" alt="Grey github logo"></a>
@@ -223,8 +230,6 @@
       </ul>
     </section>
   </main>
-
-  <script src="main.js" type="module"></script>
 </body>
 
 </html>
