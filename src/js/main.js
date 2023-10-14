@@ -13,7 +13,7 @@ fetch(`https://api.github.com/users/${userName}/repos?direction=${direction}`)
         const {name, html_url, homepage, description, stargazers_count, topics} = repository;
         let tags = ``;
 
-        for (tag of topics) {
+        for (let tag of topics) {
             tags += `<li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1 uppercase">${tag}</li>`
         }
         const element = `<article class="bg-gradient-to-br from-white/10 to-white/5 rounded-[1.25rem] overflow-clip">
@@ -32,7 +32,7 @@ fetch(`https://api.github.com/users/${userName}/repos?direction=${direction}`)
           </div>
           <p class="text-xl text-gray-400 my-4">${description}
           </p>
-          <ul class="flex gap-2 mb-10">
+          <ul class="flex flex-wrap gap-2 mb-10">
             ${tags}
           </ul>
           <div class="flex flex-col md:flex-row gap-4 md:text-xl text-base">
