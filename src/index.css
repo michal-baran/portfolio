@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .section {
+        @apply bg-zinc-800 text-white border-4 border-red-900 rounded-xl max-w-5xl mx-auto my-8;
+    }
+
+    .article {
+        @apply bg-gradient-to-br from-white/10 to-white/5 flex-1 p-5 rounded-xl shadow-innerlight ring ring-bg;
+    }
+
+    .h3 {
+        @apply text-2xl my-3 py-3 font-bold border-t-accent border-t-2;
+    }
+
+    .skills-image {
+        @apply w-44 h-44 mb-10;
+    }
+}
