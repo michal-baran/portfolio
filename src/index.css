@@ -12,10 +12,10 @@
     }
 
     .h3 {
-        @apply text-2xl my-3 py-3 font-bold border-t-accent border-t-2;
+        @apply text-2xl py-3 font-bold border-t-accent border-t-2;
     }
 
     .skills-image {
-        @apply w-44 h-44 mb-10;
+        @apply mb-10;
     }
 }

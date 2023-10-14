@@ -16,10 +16,10 @@
   <main class="px-4">
     <header class="py-6 mx-auto max-w-amb">
       <div class="flex gap-4">
-        <img class="w-10 h-10" src="images/logo.svg" alt="" />
+        <img class="" src="images/logo.svg" alt="" />
         <div>
           <p class="text-xl font-bold text-accent">Michał Baran</p>
-          <p class="text-xs font-bold text-gray-500 uppercase tracking-wider">Backend Developer</p>
+          <p class="text-xs font-bold text-gray-500 uppercase tracking-wider">Fullstack Developer</p>
         </div>
       </div>
       <nav class="hidden">
@@ -36,36 +36,38 @@
     <section class="flex flex-col md:flex-row-reverse md:gap-36 gap-4 mx-auto max-w-amb md:my-[120px] my-5" id="about">
       <img class="w-full md:w-1/3 md:h-1/3" src="images/avatar.png" alt="Michał Baran">
       <div>
-        <h1 class="md:text-5xl md:leading-[64px] text-2xl font-bold px-2 mb-4">My name is Michał and I'm an aspiring <span
-            class="text-accent">Backend
+        <h1 class="about-h1--js md:text-5xl md:leading-[64px] text-2xl font-bold px-2 mb-4">My name is Michał and I'm an
+          aspiring <span class="text-accent">Fulstack
             developer</span> and ultra cyclist adventure
           seeker.</h1>
         <p class="text-gray-400 md:text-2xl text-base px-2 md:mb-16 mb-8 font-medium">
-          You might be interested in checking the list of my <a href="#skills" class="text-white">skills</a>. Don't
-          forget to have a glimpse at my <a href="#projects" class="text-white">projects</a>. I'm
-          looking for a new challenges so if you have one - <a href="#contact" class="text-white">contact me</a>.
+          Peruse through my <a href="#skills" class="text-white">skills</a> and check out my <a href="#projects" class="text-white">projects</a> — you might find it interesting! I'm actively seeking new
+          challenges, so if you have any exciting ventures, feel free to <a href="#contact" class="text-white">contact me</a>.
         </p>
         <div class="flex flex-col md:flex-row gap-4">
-          <a class="w-48 h-14 text-bg font-bold bg-accent rounded-[0.625rem] flex gap-3 text-xl items-center"
-            href="#contact"><img class="ml-4 w-6 h-6" src="images/text.svg" alt="">Get in touch</a>
-          <a class="w-56 h-14 text-accent bg-transparent font-bold border-solid border-2 border-[#1F2937] rounded-[0.625rem] flex gap-3 text-xl items-center"
-            href="#skills"><img class="ml-4 w-6 h-6" src="images/image.svg" alt="">Get to know me</a>
+          <a class="py-[14px] px-8 text-bg font-bold bg-accent rounded-[0.625rem] flex gap-3 text-xl items-center"
+            href="#contact"><img class="w-6 h-6" src="images/text.svg" alt="">Get in touch</a>
+          <a class="py-[14px] px-8 text-accent bg-transparent font-bold border-solid border-2 border-[#1F2937] rounded-[0.625rem] flex gap-3 text-xl items-center"
+            href="#skills"><img class="w-6 h-6" src="images/image.svg" alt="">Get to know me</a>
         </div>
       </div>
     </section>
 
-    <section class="mx-auto max-w-amb md:my-[120px] py-[3.75rem]" id="skills">
+    <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb" id="skills">
       <h2 class="text-gray-400 text-xl mb-4 font-bold">MY SKILLS</h2>
       <p class="max-w-[864px] text-2xl tracking-wide md:text-[40px] md:leading-[48px] font-medium">
-        I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do
-        below!
+        I've acquired some awesome skills during my learning journey, and I'm thrilled to showcase them. Take a look at my
+        abilities below!
       </p>
       <div class="flex flex-col md:flex-row gap-4 mt-10 ">
         <article class="article">
           <img class="skills-image" src="images/skills1.svg" alt="" />
           <h3 class="h3">Working knowledge</h3>
           <ul class="text-sm font-medium tracking-tight space-y-2">
+            <li>— Java 11</li>
+            <li>— Spring Boot</li>
             <li>— Semantic HTML5</li>
+            <li>— Unit testing</li>
             <li>— Flexbox</li>
             <li>— Markdown</li>
             <li>— JS: Local storage</li>
@@ -80,6 +82,10 @@
           <img class="skills-image" src="images/skills2.svg" alt="" />
           <h3 class="h3">Know something about</h3>
           <ul class="text-sm font-medium tracking-tight space-y-2">
+            <li>— Design patterns</li>
+            <li>— Hibernate</li>
+            <li>— MySQL</li>
+            <li>— Mockito</li>
             <li>— JavaScript ES6 + features</li>
             <li>— CSS animations</li>
             <li>— Working with API</li>
@@ -90,9 +96,10 @@
           </ul>
         </article>
         <article class="article">
-          <img class="skills-image" src="images/hexagon.svg" alt="" />
+          <img class="skills-image" src="images/skills3.svg" alt="" />
           <h3 class="h3">Want to learn</h3>
           <ul class="text-sm font-medium tracking-tight space-y-2">
+            <li>— NoSQL</li>
             <li>— React</li>
             <li>— Node</li>
             <li>— Electron</li>
@@ -105,85 +112,110 @@
       </div>
     </section>
 
-    <section class="mx-auto max-w-amb py-[3.75rem]" id="projects">
+    <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb" id="projects">
       <h3 class="text-gray-400 text-xl mb-4 font-medium">RECENT PROJECTS</h3>
       <p class="max-w-[864px] md:text-[40px] md:leading-[48px] tracking-wider text-2xl mb-10 font-medium">
-        Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of
-        my accomplishments so far.
+        Since I started learning backend & frontend development in 2023, I've completed various projects. Here's a quick
+        look at what I've achieved.
       </p>
-      <article class="p-5 bg-slate-900 rounded-[0.625rem] max-w-2xl">
-        <div class="flex gap-4">
-          <h3 class="font-bold text-2xl">simple-editor</h3>
-          <p
-            class="bg-gray-400 bg-opacity-10 rounded flex gap-0.5 my-1 px-2 font-medium text-base text-[#9CA3AF] items-center">
-            <img class="w-4 h-4" src="images/star.svg" alt="" />27
-          </p>
+
+      <article class="bg-slate-900 rounded-[1.25rem] max-w-2xl">
+        <div
+          class="bg-gradient-to-br from-white/10 to-white/5 h-11 border-b border-b-slate-950 rounded-t-[1.25rem] shadow-innerlight">
         </div>
-        <p class="text-xl text-gray-400 my-4">
-          Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
-          nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...
-        </p>
-        <ul class="flex gap-2 mb-10">
-          <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">HTML</li>
-          <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">CSS</li>
-          <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">JAVASCRIPT</li>
-        </ul>
-        <a href="#"
-          class="w-max border border-slate-800 font-bold text-accent text-xl py-4 px-5 flex gap-2  items-center mb-4 rounded-xl bg-slate-950"><img
-            class="" src="images/demo.svg">View demo</a>
-        <a href="#"
-          class="w-max border border-slate-800 font-bold text-accent text-xl py-4 px-5 flex gap-2  items-center rounded-xl bg-slate-950"><img
-            class="" src="images/github_accent.svg">Source code</a>
+        <div class="p-5">
+          <div class="flex gap-4">
+            <h3 class="font-bold text-2xl">simple-editor</h3>
+            <p
+              class="bg-gray-400 bg-opacity-10 rounded flex gap-0.5 my-1 px-2 font-medium text-base text-[#9CA3AF] items-center">
+              <img class="w-4 h-4" src="images/star.svg" alt="" />27
+            </p>
+          </div>
+          <p class="text-xl text-gray-400 my-4">
+            Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...
+          </p>
+          <ul class="flex gap-2 mb-10">
+            <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">HTML</li>
+            <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">CSS</li>
+            <li class="h-7 font-bold rounded bg-gray-400 bg-opacity-10 text-sm px-2 py-1">JAVASCRIPT</li>
+          </ul>
+          <div class="flex flex-col md:flex-row gap-4">
+            <a href="#"
+              class="w-max border border-slate-800 font-bold text-accent text-xl py-4 px-5 flex gap-2  items-center rounded-xl bg-slate-950"><img
+                class="" src="images/demo.svg">View demo</a>
+            <a href="#"
+              class="w-max border border-slate-800 font-bold text-accent text-xl py-4 px-5 flex gap-2  items-center rounded-xl bg-slate-950"><img
+                class="" src="images/github_accent.svg">Source code</a>
+          </div>
+        </div>
       </article>
     </section>
 
-    <section class="mx-auto max-w-amb py-[3.75rem]" id="afterHours">
+    <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb " id="afterHours">
       <h2 class="text-gray-400 text-xl mb-4 font-bold">AFTER HOURS</h2>
       <p class="max-w-[864px] md:text-[40px] md:leading-[48px] text-2xl mb-10 font-medium">
-        Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into
-        how I spend my after-hours.
+        After work, I enjoy various activities and hobbies. Let me share what I like to do in my free time.
       </p>
-      <article>
-        <img src="images/skills1.svg" alt="" />
-        <h3>OCR Running</h3>
-        <p>
-          Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
-          electronic music
-        </p>
-      </article>
-      <article>
-        <h3>Bicyle Ultra Races</h3>
-        <img src="images/skills1.svg" alt="" />
-        <p>
-          Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
-          electronic music
-        </p>
-      </article>
-      <article>
-        <h3>Bikepacking</h3>
-        <img src="images/skills1.svg" alt="" />
-        <p>
-          Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
-          electronic music
-        </p>
-      </article>
-      <article>
-        <h3>Squadrats</h3>
-        <img src="images/skills1.svg" alt="" />
-        <p>
-          Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of
-          electronic music
-        </p>
-      </article>
+      <div class="flex md:flex-row flex-col md:gap-4 gap-[3.75rem]">
+        <article class="flex-1">
+          <img class="mb-6" src="images/after1.png" alt="" />
+          <h3 class="text-2xl mb-1 font-bold">OCR Running</h3>
+          <p class="text-base text-gray-400">
+            Obstacle Course Racing (OCR) is my thrilling and passion-fueled hobby, a fusion of running, strength, and
+            mental endurance.
+          </p>
+        </article>
+        <article class="flex-1">
+          <img class="mb-6" src="images/after2.png" alt="" />
+          <h3 class="text-2xl mb-1 font-bold">Bicycle Ultra Races</h3>
+          <p class="text-base text-gray-400">
+            Participating in ultramarathon cycling not only tests my physical strength but also cultivates mental
+            resilience and strategic thinking..
+          </p>
+        </article>
+        <article class="flex-1">
+          <img class="mb-6" src="images/after3.png" alt="" />
+          <h3 class="text-2xl mb-1 font-bold">Bikepacking</h3>
+          <p class="text-base text-gray-400">
+            Bikepacking is my beloved hobby, a fusion of biking and backpacking that allows me to embark on thrilling
+            adventures and explore the great outdoors on two wheels.
+          </p>
+        </article>
+        <article class="flex-1">
+          <img class="mb-6" src="images/after4.png" alt="" />
+          <h3 class="text-2xl mb-1 font-bold">Squadrats</h3>
+          <p class="text-base text-gray-400">
+            Combining sports activities with my passion for collecting squares in my local area is the main source of
+            motivation for an active lifestyle.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section class="py-32 mx-auto max-w-amb" id="contact">
-      <h2>Let's work together</h2>
-      <p>I'm open for new opportunities.<br>If you have one for me we should talk!</p>
-      <a href="mailto:michal.baran.dev@gmail.com">contact@michalbaran.pl</a>
-      <p>or find me on</p>
-      <ul>
-        <li><a href=""><img class="w-6 h-6" src="images/github.svg" alt=""></a></li>
+    <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb flex flex-col items-center" id="contact">
+      <h2 class="font-bold text-[32px] md:text-[40px] mb-4 text-center tracking-wide ">Let's work together</h2>
+      <p class="text-gray-400 font-medium text-center md:text-2xl text-lg mb-10">I'm open for new opportunities.<br>If
+        you have one
+        for me we
+        should talk!</p>
+      <a class="mb-10 py-[14px] px-8 text-bg font-bold bg-accent text-xl rounded-[1.25rem] flex gap-3 items-center"
+        href="mailto:michal.baran.dev@gmail.com"><img class="w-6 h-6" src="images/mail.svg"
+          alt="">contact@michalbaran.pl</a>
+      <p class="text-2xl font-medium text-gray-400 mb-6 text-center">or find me on</p>
+      <ul class="flex gap-4">
+        <li>
+          <a href="https://github.com/michal-baran" target="_blank"><img class="article w-14 h-14 rounded-[28px] p-4"
+              src="images/github.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/michal-baran-dev" target="_blank"><img
+              class="article w-14 h-14 rounded-[28px] p-4" src="images/linkedin.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="https://www.strava.com/athletes/39436081" target="_blank"><img
+              class="article w-14 h-14 rounded-[28px] p-4" src="images/strava.svg" alt=""></a>
+        </li>
       </ul>
     </section>
   </main>
