@@ -43,12 +43,12 @@ fetch(`https://api.github.com/users/${userName}/repos?direction=${direction}`)
                 target="blank"
                 rel="noreferrer nofollow"
                 class="w-max ring-1 hover:ring-2 ring-slate-700 hover:ring-accent-500 font-bold text-accent hover:text-accent-500 transition-all duration-500 py-4 px-5 flex gap-2 items-center rounded-xl bg-slate-950">
-                <img class="" src="${demo}" alt="Simple window icon">View demo</a>
+                <img width="24" height="24" class="" src="${demo}" alt="Simple window icon">View demo</a>
             <a href="${html_url}"
                 target="blank"
                 rel="noreferrer nofollow"
                 class="w-max ring-1 hover:ring-2 ring-slate-700 hover:ring-accent-500 font-bold text-accent hover:text-accent-500 transition-all duration-500 py-4 px-5 flex gap-2 items-center rounded-xl bg-slate-950">
-                <img class="" src="${githubAccent}" alt="Github logo in color">Source code</a>
+                <img width="24" height="24" class="" src="${githubAccent}" alt="Github logo in color">Source code</a>
           </div>
         </div>
         </article>`;
