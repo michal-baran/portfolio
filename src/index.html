@@ -1,202 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hi! My name is Michał and I'm aspiring Fullstack developer. Feel free to get in touch!"
+    />
+    <title>Michał Baran - Portfolio</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Hi! My name is Michał and I'm aspiring Fullstack developer. Feel free to get in touch!" />
-  <title>Michał Baran - Portfolio</title>
-  <link href="./index.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body class="bg-bg text-white font-dmSans text-justify">
-  <main class="px-4">
-    <header class="flex items-center gap-4 justify-between py-6 mx-auto max-w-amb  ">
-      <div class="flex items-center">
-        <img class="mr-4" src="images/logo.svg" alt="" />
-        <div class="flex-shrink-0">
-          <p class="text-xl font-bold text-accent">Michał Baran</p>
-          <p class="text-xs font-bold text-gray-200 uppercase tracking-wider">Fullstack Developer</p>
+  <body class="bg-bg text-white font-dmSans text-justify">
+    <main class="px-4">
+      <header class="flex items-center gap-4 justify-between py-6 mx-auto max-w-amb">
+        <div class="flex items-center">
+          <img class="mr-4 animate-slowSpin" src="images/logo.svg" alt="" />
+          <div class="flex-shrink-0">
+            <p class="text-xl font-bold text-accent">Michał Baran</p>
+            <p class="text-xs font-bold text-gray-200 uppercase tracking-wider">Fullstack Developer</p>
+          </div>
         </div>
-      </div>
-      <nav class="md:block hidden">
-        <ul class="flex gap-10 items-center font-bold text-base">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#" class="flex gap-2 items-center" download><img class="w-5 h-5"
-                src="images/download.svg" alt="Download icon">Resume</a></li>
-          <li><a href="#contact" class="py-[14px] px-8 text-bg bg-accent rounded-xl flex gap-3">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+        <nav class="md:block hidden">
+          <ul class="flex gap-10 items-center font-bold text-base">
+            <li><a class="hover:text-accent transition-colors duration-500" href="#about">About</a></li>
+            <li><a class="hover:text-accent transition-colors duration-500" href="#skills">Skills</a></li>
+            <li><a class="hover:text-accent transition-colors duration-500" href="#projects">Projects</a></li>
+            <li>
+              <a href="#" class="flex gap-2 items-center hover:text-accent transition-colors duration-500" download
+                ><img class="w-5 h-5 animate-pulse" src="images/download.svg" alt="Download icon" />Resume</a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="py-[14px] px-8 text-bg bg-accent hover:bg-accent-500 transition-colors duration-500 rounded-xl flex gap-3"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <section class="flex flex-col md:flex-row-reverse md:gap-36 gap-4 mx-auto max-w-amb md:my-[120px] my-5" id="about">
-      <img class="w-full md:w-1/3 md:h-1/3" src="images/avatar.png?as=webp" alt="Michał Baran">
-      <div>
-        <h1 class="about-h1--js md:text-5xl md:leading-[64px] text-2xl font-bold px-2 mb-4">My name is Michał and I'm an
-          aspiring <span class="text-accent">Fulstack
-            developer</span> and ultra cyclist adventure
-          seeker.</h1>
-        <p class="text-gray-400 md:text-2xl text-base px-2 md:mb-16 mb-8 font-medium">
-          Peruse through my <a href="#skills" class="text-white underline">skills</a> and check out my <a
-            href="#projects" class="text-white underline">projects</a> — you might find it interesting! I'm actively
-          seeking new challenges, so if you have any exciting ventures, feel free to <a href="#contact"
-            class="text-white underline">contact me</a>.
+      <section
+        class="flex flex-col md:flex-row-reverse md:gap-36 gap-4 mx-auto max-w-amb md:my-[120px] my-5"
+        id="about"
+      >
+        <img
+          class="w-full max-w-xs md:max-w-none md:w-1/3 md:h-1/3"
+          src="images/avatar.png?as=webp"
+          alt="Michał Baran"
+        />
+        <div>
+          <h1 class="about-h1--js md:text-5xl md:leading-[64px] text-2xl font-bold px-2 mb-4">
+            My name is Michał and I'm an aspiring <span class="text-accent">Fulstack developer</span> and ultra cyclist
+            adventure seeker.
+          </h1>
+          <p class="text-gray-400 md:text-2xl text-base px-2 md:mb-16 mb-8 font-medium">
+            Peruse through my <a href="#skills" class="text-white underline">skills</a> and check out my
+            <a href="#projects" class="text-white underline">projects</a> — you might find it interesting! I'm actively
+            seeking new challenges, so if you have any exciting ventures, feel free to
+            <a href="#contact" class="text-white underline">contact me</a>.
+          </p>
+          <div class="flex flex-col md:flex-row items-start gap-4 flex-wrap">
+            <a
+              class="bg-accent hover:bg-accent-500 transition-colors duration-500 py-[14px] px-8 text-bg font-bold rounded-[0.625rem] flex gap-3 text-xl items-center"
+              href="#contact"
+              ><img class="w-6 h-6" src="images/text.svg" alt="" />Get in touch</a
+            >
+            <a
+              class="py-[14px] px-8 text-accent hover:text-accent-500 transition-all duration-500 bg-transparent font-bold ring-2 ring-slate-700 hover:ring-accent-500 rounded-[0.625rem] flex gap-3 text-xl items-center"
+              href="#skills"
+              ><img class="w-6 h-6" src="images/image.svg" alt="" />Get to know me</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb">
+        <h2 class="text-gray-400 text-xl mb-4 font-bold" id="skills">MY SKILLS</h2>
+        <p class="max-w-[864px] text-2xl tracking-wide md:text-[40px] md:leading-[48px] font-medium">
+          I've acquired some awesome skills during my learning journey, and I'm thrilled to showcase them. Take a look
+          at my abilities below!
         </p>
-        <div class="flex flex-col md:flex-row items-start gap-4 flex-wrap">
-          <a class="py-[14px] px-8 text-bg font-bold bg-accent rounded-[0.625rem] flex gap-3 text-xl items-center"
-            href="#contact"><img class="w-6 h-6" src="images/text.svg" alt="">Get in touch</a>
-          <a class="py-[14px] px-8 text-accent bg-transparent font-bold border-solid border-2 border-[#1F2937] rounded-[0.625rem] flex gap-3 text-xl items-center"
-            href="#skills"><img class="w-6 h-6" src="images/image.svg" alt="">Get to know me</a>
+        <div class="flex flex-col md:flex-row gap-4 mt-10">
+          <article class="article">
+            <img class="mb-10 h-44" src="images/skills1.svg" alt="Full completed cubic" />
+            <h3 class="h3">Working knowledge</h3>
+            <ul class="text-sm font-medium tracking-tight space-y-2">
+              <li>— Java 11</li>
+              <li>— Spring Boot</li>
+              <li>— Semantic HTML5</li>
+              <li>— Unit testing</li>
+              <li>— Flexbox</li>
+              <li>— Markdown</li>
+              <li>— JS: Local storage</li>
+              <li>— Figma</li>
+              <li>— CSS grid</li>
+              <li>— Forms</li>
+              <li>— JS: DOM manipulations</li>
+              <li>— SASS</li>
+            </ul>
+          </article>
+          <article class="article">
+            <img class="mb-10 h-44" src="images/skills2.svg" alt="Partially completed cubic" />
+            <h3 class="h3">Know something about</h3>
+            <ul class="text-sm font-medium tracking-tight space-y-2">
+              <li>— Design patterns</li>
+              <li>— Hibernate</li>
+              <li>— MySQL</li>
+              <li>— Mockito</li>
+              <li>— JavaScript ES6 + features</li>
+              <li>— CSS animations</li>
+              <li>— Working with API</li>
+              <li>— NPM Scripts</li>
+              <li>— PWA</li>
+              <li>— Git</li>
+              <li>— Accessibility</li>
+            </ul>
+          </article>
+          <article class="article">
+            <img class="mb-10 h-44" src="images/skills3.svg" alt="Incompleted cubic" />
+            <h3 class="h3">Want to learn</h3>
+            <ul class="text-sm font-medium tracking-tight space-y-2">
+              <li>— NoSQL</li>
+              <li>— React</li>
+              <li>— Node</li>
+              <li>— Electron</li>
+              <li>— SSR</li>
+              <li>— TypeScript</li>
+              <li>— Gatsby</li>
+              <li>— WebSockets</li>
+            </ul>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb" id="skills">
-      <h2 class="text-gray-400 text-xl mb-4 font-bold">MY SKILLS</h2>
-      <p class="max-w-[864px] text-2xl tracking-wide md:text-[40px] md:leading-[48px] font-medium">
-        I've acquired some awesome skills during my learning journey, and I'm thrilled to showcase them. Take a look at
-        my
-        abilities below!
-      </p>
-      <div class="flex flex-col md:flex-row gap-4 mt-10 ">
-        <article class="article">
-          <img class="mb-10 h-44" src="images/skills1.svg" alt="Full completed cubic" />
-          <h3 class="h3">Working knowledge</h3>
-          <ul class="text-sm font-medium tracking-tight space-y-2">
-            <li>— Java 11</li>
-            <li>— Spring Boot</li>
-            <li>— Semantic HTML5</li>
-            <li>— Unit testing</li>
-            <li>— Flexbox</li>
-            <li>— Markdown</li>
-            <li>— JS: Local storage</li>
-            <li>— Figma</li>
-            <li>— CSS grid</li>
-            <li>— Forms</li>
-            <li>— JS: DOM manipulations</li>
-            <li>— SASS</li>
-          </ul>
-        </article>
-        <article class="article">
-          <img class="mb-10 h-44" src="images/skills2.svg" alt="Partially completed cubic" />
-          <h3 class="h3">Know something about</h3>
-          <ul class="text-sm font-medium tracking-tight space-y-2">
-            <li>— Design patterns</li>
-            <li>— Hibernate</li>
-            <li>— MySQL</li>
-            <li>— Mockito</li>
-            <li>— JavaScript ES6 + features</li>
-            <li>— CSS animations</li>
-            <li>— Working with API</li>
-            <li>— NPM Scripts</li>
-            <li>— PWA</li>
-            <li>— Git</li>
-            <li>— Accessibility</li>
-          </ul>
-        </article>
-        <article class="article">
-          <img class="mb-10 h-44" src="images/skills3.svg" alt="Incompleted cubic" />
-          <h3 class="h3">Want to learn</h3>
-          <ul class="text-sm font-medium tracking-tight space-y-2">
-            <li>— NoSQL</li>
-            <li>— React</li>
-            <li>— Node</li>
-            <li>— Electron</li>
-            <li>— SSR</li>
-            <li>— TypeScript</li>
-            <li>— Gatsby</li>
-            <li>— WebSockets</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+      <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb">
+        <h3 class="text-gray-400 text-xl mb-4 font-medium" id="projects">RECENT PROJECTS</h3>
+        <p class="max-w-[864px] md:text-[40px] md:leading-[48px] tracking-wider text-2xl mb-10 font-medium">
+          Since I started learning backend & frontend development in 2023, I've completed various projects. Here's a
+          quick look at what I've achieved.
+        </p>
 
-    <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb" id="projects">
-      <h3 class="text-gray-400 text-xl mb-4 font-medium">RECENT PROJECTS</h3>
-      <p class="max-w-[864px] md:text-[40px] md:leading-[48px] tracking-wider text-2xl mb-10 font-medium">
-        Since I started learning backend & frontend development in 2023, I've completed various projects. Here's a quick
-        look at what I've achieved.
-      </p>
+        <div class="grid gap-4 md:grid-cols-2 projects--js"></div>
+      </section>
 
-      <div class="grid gap-4 md:grid-cols-2 projects--js">
-      </div>
-    </section>
+      <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb" id="afterHours">
+        <h2 class="text-gray-400 text-xl mb-4 font-bold">AFTER HOURS</h2>
+        <p class="max-w-[864px] md:text-[40px] md:leading-[48px] text-2xl mb-10 font-medium">
+          After work, I enjoy various activities and hobbies. Let me share what I like to do in my free time.
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 md:gap-4 gap-16">
+          <article class="flex-1">
+            <img class="mb-6" src="images/after1.png?as=webp" alt="" />
+            <h3 class="text-2xl mb-1 font-bold">OCR Runs</h3>
+            <p class="text-base text-gray-400">
+              Obstacle Course Racing (OCR) is my thrilling and passion-fueled hobby, a fusion of running, strength, and
+              mental endurance.
+            </p>
+          </article>
+          <article class="flex-1">
+            <img class="mb-6" src="images/after2.png?as=webp" alt="" />
+            <h3 class="text-2xl mb-1 font-bold">Bicycle Ultra Races</h3>
+            <p class="text-base text-gray-400">
+              Participating in ultramarathon cycling not only tests my physical strength but also cultivates mental
+              resilience and strategic thinking..
+            </p>
+          </article>
+          <article class="flex-1">
+            <img class="mb-6" src="images/after3.png?as=webp" alt="" />
+            <h3 class="text-2xl mb-1 font-bold">Bikepacking</h3>
+            <p class="text-base text-gray-400">
+              Bikepacking is my beloved hobby, a fusion of biking and backpacking that allows me to embark on thrilling
+              adventures and explore the great outdoors on two wheels.
+            </p>
+          </article>
+          <article class="flex-1">
+            <img class="mb-6" src="images/after4.png?as=webp" alt="" />
+            <h3 class="text-2xl mb-1 font-bold">Collecting Squadrats</h3>
+            <p class="text-base text-gray-400">
+              Combining sports activities with my passion for collecting squares in my local area is the main source of
+              motivation for an active lifestyle.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb " id="afterHours">
-      <h2 class="text-gray-400 text-xl mb-4 font-bold">AFTER HOURS</h2>
-      <p class="max-w-[864px] md:text-[40px] md:leading-[48px] text-2xl mb-10 font-medium">
-        After work, I enjoy various activities and hobbies. Let me share what I like to do in my free time.
-      </p>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 md:gap-4 gap-16">
-        <article class="flex-1">
-          <img class="mb-6" src="images/after1.png?as=webp" alt="" />
-          <h3 class="text-2xl mb-1 font-bold">OCR Running</h3>
-          <p class="text-base text-gray-400">
-            Obstacle Course Racing (OCR) is my thrilling and passion-fueled hobby, a fusion of running, strength, and
-            mental endurance.
-          </p>
-        </article>
-        <article class="flex-1">
-          <img class="mb-6" src="images/after2.png?as=webp" alt="" />
-          <h3 class="text-2xl mb-1 font-bold">Bicycle Ultra Races</h3>
-          <p class="text-base text-gray-400">
-            Participating in ultramarathon cycling not only tests my physical strength but also cultivates mental
-            resilience and strategic thinking..
-          </p>
-        </article>
-        <article class="flex-1">
-          <img class="mb-6" src="images/after3.png?as=webp" alt="" />
-          <h3 class="text-2xl mb-1 font-bold">Bikepacking</h3>
-          <p class="text-base text-gray-400">
-            Bikepacking is my beloved hobby, a fusion of biking and backpacking that allows me to embark on thrilling
-            adventures and explore the great outdoors on two wheels.
-          </p>
-        </article>
-        <article class="flex-1">
-          <img class="mb-6" src="images/after4.png?as=webp" alt="" />
-          <h3 class="text-2xl mb-1 font-bold">Squadrats</h3>
-          <p class="text-base text-gray-400">
-            Combining sports activities with my passion for collecting squares in my local area is the main source of
-            motivation for an active lifestyle.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb flex flex-col items-center" id="contact">
-      <h2 class="font-bold text-[32px] md:text-[40px] mb-4 text-center tracking-wide ">Let's work together</h2>
-      <p class="text-gray-400 font-medium text-center md:text-2xl text-lg mb-10">I'm open for new opportunities.<br>If
-        you have one
-        for me we
-        should talk!</p>
-      <a class="mb-10 py-[14px] px-8 text-bg font-bold bg-accent text-xl rounded-[1.25rem] flex gap-3 items-center"
-        href="mailto:michal.baran.dev@gmail.com"><img class="w-6 h-6" src="images/mail.svg"
-          alt="">contact@michalbaran.pl</a>
-      <p class="text-2xl font-medium text-gray-400 mb-6 text-center">or find me on</p>
-      <ul class="flex flwx-wrap gap-4">
-        <li>
-          <a class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight rounded-full flex items-center justify-center" href="https://github.com/michal-baran" target="_blank"><img
-              class="w-6 h-6" src="images/github.svg" alt="Grey github logo"></a>
-        </li>
-        <li>
-          <a class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight rounded-full flex items-center justify-center" href="https://www.linkedin.com/in/michal-baran-dev" target="_blank"><img
-              class="w-6 h-6" src="images/linkedin.svg" alt="Grey linkedin logo"></a>
-        </li>
-        <li>
-          <a class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight rounded-full flex items-center justify-center" href="https://www.strava.com/athletes/39436081" target="_blank"><img
-              class="w-6 h-6" src="images/strava.svg" alt="Grey strava logo"></a>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <script src="js/main.js" type="module"></script>
-</body>
-
+      <section class="md:py-[7.5rem] py-[3.75rem] mx-auto max-w-amb flex flex-col items-center" id="contact">
+        <h2 class="font-bold text-[32px] md:text-[40px] mb-4 text-center tracking-wide">Let's work together</h2>
+        <p class="text-gray-400 font-medium text-center md:text-2xl text-lg mb-10">
+          I'm open for new opportunities.<br />If you have one for me we should talk!
+        </p>
+        <a
+          class="mb-10 py-[14px] px-8 text-bg font-bold bg-accent text-xl rounded-[1.25rem] flex gap-3 items-center hover:bg-accent-500 transition-colors duration-500"
+          href="mailto:michal.baran.dev@gmail.com"
+          ><img class="w-6 h-6" src="images/mail.svg" alt="" />contact@michalbaran.pl</a
+        >
+        <p class="text-2xl font-medium text-gray-400 mb-6 text-center">or find me on</p>
+        <ul class="flex flwx-wrap gap-4">
+          <li>
+            <a
+              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight rounded-full flex items-center justify-center"
+              href="https://github.com/michal-baran"
+              target="_blank"
+              ><img class="w-6 h-6" src="images/github.svg" alt="Grey github logo"
+            /></a>
+          </li>
+          <li>
+            <a
+              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight rounded-full flex items-center justify-center"
+              href="https://www.linkedin.com/in/michal-baran-dev"
+              target="_blank"
+              ><img class="w-6 h-6" src="images/linkedin.svg" alt="Grey linkedin logo"
+            /></a>
+          </li>
+          <li>
+            <a
+              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight rounded-full flex items-center justify-center"
+              href="https://www.strava.com/athletes/39436081"
+              target="_blank"
+              ><img class="w-6 h-6" src="images/strava.svg" alt="Grey strava logo"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="js/main.js" type="module"></script>
+  </body>
 </html>
